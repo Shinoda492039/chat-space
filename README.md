@@ -14,7 +14,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|member|string||
 ### Association
 - has_many :messages
 - has_many  :users, through: :groups_users
