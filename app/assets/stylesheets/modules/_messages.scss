@@ -9,36 +9,62 @@
 
 .side-bar {
   width: 300px;
+  color: #ffffff;
   &__user-name {
     height: 100px;
     background-color: #253141;
     display: flex;
+    align-items: center;
   }
-  &__group-list {
+  &__group-lists {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    padding-left: 20px;
   }
+}
+.user-name {
+  &__top-items {
+    height: 20px;
+    width: 260px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    font-weight: bold;
+  }
+}
+
+i {
+  padding-left: 5px;
+}
+.group-name {
+  font-size: 15px;
+  padding: 20px 0 5px;
+}
+.group-message {
+  font-size: 11px;
 }
 
 .chat-main {
   width: calc(100vw - 300px);
   &__group-info {
-    &--backWhite {
-      height: 100px;
-      border: 1px solid #eeeeee;
-      background-color: #ffffff;
-    }
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
 }
 &__message-list {
-  &--backLightGray {
-    height: calc(100% - 190px);
-    background-color: #fafafa;
-  }
+  height: calc(100% - 190px);
+  background-color: #fafafa;
 }
 &__message-form {
-  &--backGray {
-    height: 90px;
-    background-color: #d2d2d2;
-  }
+  height: 90px;
+  background-color: #d2d2d2;
 }
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }

@@ -2,5 +2,16 @@
   .side-bar__user-name
     .user-name__top-items
       .top-items__name
+        しのだ
       .top-items__icons
-  .side-bar__group-list
+        = link_to "#" do
+          %i.fa.fa-edit
+          %span<>
+        = link_to "#" do
+          %i.fa.fa-cog
+  .side-bar__group-lists
+    .group-name
+      test
+    .group-message
+      = link_to "#", class:"group-message"  do
+        まだメッセージがありません
