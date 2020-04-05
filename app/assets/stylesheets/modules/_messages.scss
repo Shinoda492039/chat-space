@@ -13,21 +13,25 @@
       background-color: #253141;
       display: flex;
       align-items: center;
+      padding: 0 20px;
       .top-items {
         height: 20px;
         width: 260px;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
+        @include between();
         line-height: 20px;
         .name {
           font-weight: bold;
         }
         .icons {
+          width: 60px;
+          text-align: right;
           &__icon {
             text-decoration: none;
             color: $whiteColor;
-            padding-left: 5px;
+            &--cog {
+              padding-left: 5px;
+            }
           }
         }
       }
@@ -35,15 +39,17 @@
     .group-lists {
       height: calc(100vh - 100px);
       background-color: #2f3e51;
-      padding-left: 20px;
+      padding: 20px 20px 0;
       &__group-name {
         font-size: 15px;
-        padding: 20px 0 5px;
+        padding-bottom: 5px;
       }
       &__group-message {
           font-size: 11px;
           text-decoration: none;
           color: $whiteColor;
+          padding-bottom: 40px;
+          display: block;
         }
       }
     }
@@ -52,13 +58,13 @@
   .chat-main {
     width: calc(100vw - 300px);
     .group-info {
-      display: flex;
-      justify-content: space-between;
+      @include between();
       height: 100px;
       border: 1px solid #eeeeee;
       background-color: $whiteColor;
+      padding: 0 40px;
       &__title {
-        padding: 35px 0 0 40px;
+        padding-top: 35px;
         font-size: 20px;
         color: #333333;
       }
@@ -70,13 +76,14 @@
       .edit {
         font-size: 16px;
         height: 40px;
+        width: 74px;
         line-height: 40px;
         padding: 0 20px;
         margin-top: 30px;
         border: 1px solid $lightBlue;
         position: absolute;
         right: 40px;
-        .icon {
+        &__icon {
           text-decoration: none;
           color: $lightBlue;
         }
@@ -85,9 +92,9 @@
     .messages {
     height: calc(100% - 190px);
     background-color: #fafafa;
-    padding: 46px 40px;
+    padding: 35px 40px;
     .message {
-      padding-bottom: 40px;
+      padding-bottom: 46px;
       .upper-info {
         display: flex;
         &__talker {
