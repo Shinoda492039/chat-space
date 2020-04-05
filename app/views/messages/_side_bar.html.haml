@@ -1,17 +1,16 @@
 .side-bar
   .user-name
     .top-items
-      .name
+      %p.name
         しのだ
       .icons
-        = link_to "#", class: "icon" do
+        = link_to "#", class: "icons__icon" do
           %i.fa.fa-edit
           %span<>
-        = link_to "#", class: "icon" do
+        = link_to "#", class: "icons__icon" do
           %i.fa.fa-cog
   .group-lists
     .group-lists__group-name
       test
-    .group-messages
-      = link_to "#", class:"group-message"  do
-        まだメッセージがありません
+    = link_to "#", class:"group-lists__group-message"  do
+      まだメッセージがありません

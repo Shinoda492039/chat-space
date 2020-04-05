@@ -24,7 +24,7 @@
           font-weight: bold;
         }
         .icons {
-          &__icon {
+          .icon {
             text-decoration: none;
             color: $whiteColor;
             padding-left: 5px;
@@ -40,8 +40,9 @@
         font-size: 15px;
         padding: 20px 0 5px;
       }
-      &__group-message {
-          font-size: 11px;
+      .group-messages {
+        font-size: 11px;
+        .group-message {
           text-decoration: none;
           color: $whiteColor;
         }
@@ -150,3 +151,4 @@
     }
   }
   }
+}
