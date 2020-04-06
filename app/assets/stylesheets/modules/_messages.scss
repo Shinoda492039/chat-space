@@ -10,7 +10,7 @@
     color: $whiteColor;
     .user-name {
       height: 100px;
-      background-color: #253141;
+      background-color: $darkCyan;
       display: flex;
       align-items: center;
       padding: 0 20px;
@@ -38,7 +38,7 @@
     }
     .group-lists {
       height: calc(100vh - 100px);
-      background-color: #2f3e51;
+      background-color: $middleCyan;
       padding: 20px 20px 0;
       &__group-name {
         font-size: 15px;
@@ -60,16 +60,16 @@
     .group-info {
       @include between();
       height: 100px;
-      border: 1px solid #eeeeee;
+      border: 1px solid $slightGray;
       background-color: $whiteColor;
       padding: 0 40px;
       &__title {
         padding-top: 35px;
         font-size: 20px;
-        color: #333333;
+        color: $darkGray;
       }
       &__member {
-        color: #999999;
+        color: $gray;
         font-size: 12px;
         padding-top: 15px;
       }
@@ -91,25 +91,25 @@
   }
     .messages {
     height: calc(100% - 190px);
-    background-color: #fafafa;
+    background-color: $fordWhite;
     padding: 35px 40px;
     .message {
       padding-bottom: 46px;
       .upper-info {
         display: flex;
         &__talker {
-          color: #333333;
+          color: $darkGray;
           font-size: 16px;
           font-weight: bold;
         }
         &__date {
-          color: #999999;
+          color: $gray;
           font-size: 12px;
           margin-left: 10px;
         }
       }
       &__text {
-        color: #434A54;
+        color: $ironBlue;
         font-size: 14px;
         padding-top: 12px;
       }
@@ -118,7 +118,7 @@
   .form {
     height: 90px;
     padding: 20px 40px;
-    background-color: #ddd;
+    background-color: $lightGray;
     .new-message {
       display: flex;
       height: 50px;
@@ -129,7 +129,7 @@
         &__text {
           width: 100%;
           padding: 0 40px 0 10px;
-          color: #434a54;
+          color: $ironBlue;
           border-style: none;
         }
         .image {
@@ -152,7 +152,7 @@
         background-color: $lightBlue;
         font-size: 16px;
         cursor: pointer;
-        color: white;
+        color: $whiteColor;
       }
     }
   }
