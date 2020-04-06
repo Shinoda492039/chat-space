@@ -1,0 +1,34 @@
+.chat-main
+  .group-info
+    .group-info__title
+      test
+      .group-info__member
+        Member : しのだ やまだ
+    .edit
+      = link_to "#", class: "edit__icon" do
+        Edit
+  .messages
+    .message
+      .upper-info
+        %p.upper-info__talker
+          しのだ
+        %p.upper-info__date
+          2019/11/20(Wed) 17:43:01
+      %p.message__text
+        おはよう！
+    .message
+      .upper-info
+        %p.upper-info__talker
+          やまだ
+        %p.upper-info__date
+          2020/04/04(Wed) 17:43:01
+      %p.message__text
+        test
+  .form
+    %form#new-message.new-message
+      .input-box
+        %input#message_content.input-box__text{name: "message[content]", placeholder: "type a message", type: "text", value: ""}
+        %label.image
+          %i.fa.fa-image
+          %input#message_image.image__file{type: "file"}
+      %input.submit-btn{name: "commit", type: "submit", value: "Send"}
