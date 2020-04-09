@@ -4,17 +4,14 @@
       %p.name
         = current_user.name
       .icons
-        = link_to "#", class: "icons__icon" do
+        = link_to new_group_path, class: "icons__icon" do
           %i.fa.fa-edit
           %span<>
         = link_to edit_user_path(current_user), class: "icons__icon icons__icon--cog" do
           %i.fa.fa-cog
   .group-lists
-    .group-lists__group-name
-      test
-    = link_to "#", class:"group-lists__group-message"  do
-      test2
-    .group-lists__group-name
-      test3
-    = link_to "#", class:"group-lists__group-message"  do
-      まだメッセージがありません
+    - current_user.groups.each do |group|
+      = link_to "#", class:"group-lists__group-name"  do
+        = group.name
+      = link_to "#", class:"group-lists__group-message"  do
+        メッセージはまだありません。
