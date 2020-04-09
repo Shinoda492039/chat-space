@@ -43,6 +43,9 @@
       &__group-name {
         font-size: 15px;
         padding-bottom: 5px;
+        text-decoration: none;
+        color: $whiteColor;
+        display: block;
       }
       &__group-message {
           font-size: 11px;
