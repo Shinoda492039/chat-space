@@ -1,11 +1,11 @@
 .chat-main
   .group-info
     .group-info__title
-      test
+      = @group.name
       .group-info__member
-        Member : しのだ やまだ
+        = "Member : #{@group.user_ids}"
     .edit
-      = link_to "#", class: "edit__icon" do
+      = link_to edit_group_path(@group), class: "edit__icon" do
         Edit
   .messages
     = render @messages
