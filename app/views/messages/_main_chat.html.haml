@@ -3,7 +3,9 @@
     .group-info__title
       = @group.name
       .group-info__member
-        = "Member : #{@group.user_ids}"
+        Member : 
+        - @group.users.each do |user|
+          = user.name
     .edit
       = link_to edit_group_path(@group), class: "edit__icon" do
         Edit
