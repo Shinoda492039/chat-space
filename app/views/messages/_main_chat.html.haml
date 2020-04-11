@@ -8,22 +8,7 @@
       = link_to "#", class: "edit__icon" do
         Edit
   .messages
-    .message
-      .upper-info
-        %p.upper-info__talker
-          しのだ
-        %p.upper-info__date
-          2019/11/20(Wed) 17:43:01
-      %p.message__text
-        おはよう！
-    .message
-      .upper-info
-        %p.upper-info__talker
-          やまだ
-        %p.upper-info__date
-          2020/04/04(Wed) 17:43:01
-      %p.message__text
-        test
+    = render @messages
   .form
     .new-message
       = form_for [@group, @message] do |f|

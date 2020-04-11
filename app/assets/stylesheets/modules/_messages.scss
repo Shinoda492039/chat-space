@@ -93,6 +93,7 @@
       }
   }
     .messages {
+    overflow: scroll;
     height: calc(100% - 190px);
     background-color: $fordWhite;
     padding: 35px 40px;
