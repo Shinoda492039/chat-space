@@ -14,4 +14,4 @@
       = link_to group_messages_path(group), class:"group-lists__group-name"  do
         = group.name
       = link_to group_messages_path(group), class:"group-lists__group-message"  do
-        メッセージはまだありません。
+        = group.show_last_message
