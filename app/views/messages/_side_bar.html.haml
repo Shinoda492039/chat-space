@@ -11,7 +11,7 @@
           %i.fa.fa-cog
   .group-lists
     - current_user.groups.each do |group|
-      = link_to "#", class:"group-lists__group-name"  do
+      = link_to group_messages_path(group), class:"group-lists__group-name"  do
         = group.name
-      = link_to "#", class:"group-lists__group-message"  do
-        メッセージはまだありません。
+      = link_to group_messages_path(group), class:"group-lists__group-message"  do
+        = group.show_last_message

@@ -93,6 +93,7 @@
       }
   }
     .messages {
+    overflow: scroll;
     height: calc(100% - 190px);
     background-color: $fordWhite;
     padding: 35px 40px;
@@ -123,9 +124,8 @@
     padding: 20px 40px;
     background-color: $lightGray;
     .new-message {
-      display: flex;
-      height: 50px;
       .input-box {
+        height: 50px;
         width: 100%;
         display: flex;
         position: relative;
@@ -136,9 +136,9 @@
           border-style: none;
         }
         .image {
-          position: absolute;
           top: 15px;
-          right: 10px;
+          right: 125px;
+          position: absolute;
           cursor: pointer;
           .fa.fa-image {
             font-size: 1.3rem;
