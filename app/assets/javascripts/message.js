@@ -18,7 +18,7 @@ $(function(){
         $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
       }
     })
-    .fall(function() {
+    .fail(function() {
       alert('error');
     });
   };
