@@ -31,7 +31,7 @@ $(function() {
   }
 
   $('#user-search-field').on('keyup', function() {
-    var input = $('#user-search-field').val();
+    var input = $(this).val();
     $.ajax({
       type: 'GET',
       url: '/users',
